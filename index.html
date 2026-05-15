@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angus For Meat | أنجوس للحوم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="angus-style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" aria-label="Angus For Meat">
+        <img class="nav-logo" src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873707/%D8%B4%D8%B9%D8%A7%D8%B11_soimgh.png" alt="شعار Angus For Meat" onerror="this.style.display='none';this.nextElementSibling.classList.add('show')">
+        <span class="nav-logo-text">ANGUS</span>
+        <span class="nav-brand-fallback">ANGUS FOR MEAT</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#menu">القائمة</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/v1778873800/%D9%88%D8%A7%D8%AC%D9%87%D8%A92_c6glns.png" alt="واجهة المطعم" id="heroBgImg">
+      <div class="hero-dim"></div>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <p class="hero-tag">الأصالة في كل قطعة</p>
+        <h1 class="hero-title">اللحوم الفاخرة</h1>
+        <p class="hero-sub">
+          نقدم أرقى قطع اللحوم المختارة بعناية فائقة، مع تقديم راقٍ وتجربة تليق باسم Angus.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn-red">استعرض القائمة</a>
+          <a href="#about" class="btn-outline">اكتشف قصتنا</a>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="hero-scroll-hint">
+        <div class="hs-line"></div>
+        <span>اسحب للأسفل</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><b>300</b><sup>+</sup><p>طبق يومياً</p></div>
+    <div class="sdiv"></div>
+    <div class="stat"><b>10</b><sup>+</sup><p>سنة خبرة</p></div>
+    <div class="sdiv"></div>
+    <div class="stat"><b>98</b><sup>%</sup><p>رضا العملاء</p></div>
+    <div class="sdiv"></div>
+    <div class="stat"><b>10</b><sup>+</sup><p>قطعة فاخرة</p></div>
+  </section>
+
+  <section class="menu-sec" id="menu">
+    <div class="sec-head">
+      <span class="sec-tag">قائمتنا</span>
+      <h2>أشهى الأطباق</h2>
+      <div class="ornament"><span></span><svg viewBox="0 0 40 16"><path d="M0 8 Q10 0 20 8 Q30 16 40 8" fill="none" stroke="#c0392b" stroke-width="2"/></svg><span></span></div>
+    </div>
+
+    <div class="tabs-wrap">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-tab="beef">🥩 لحوم العجل</button>
+        <button class="tab" data-tab="chicken">🍗 الدجاج</button>
+        <button class="tab" data-tab="lamb">🍖 لحوم الخروف</button>
+        <button class="tab" data-tab="premium">⭐ لحم فاخر</button>
+        <button class="tab" data-tab="sandwiches">🥙 ساندويشات</button>
+        <button class="tab" data-tab="drinks">🥤 مشروبات</button>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+        <article class="mc" data-category="beef" data-title="ستيك واغيو" data-desc="قطعة لحم واغيو فاخرة مشوية على الفحم." data-img="imag/StWg.png" data-price="240" data-ingredients='[&quot;لحم واغيو أصلي&quot;, &quot;تتبيلة خاصة&quot;, &quot;زبدة عشبية&quot;, &quot;ثوم محمر&quot;, &quot;ملح الهيمالايا&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873719/StWg_ktbucg.png" alt="ستيك واغيو" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">240₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>ستيك واغيو</h3>
+            <p>قطعة لحم واغيو فاخرة مشوية على الفحم.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+        <article class="mc" data-category="beef" data-title="فيليه" data-desc="قطعة فيليه طرية ومشوية على الفحم." data-img="imag/faleh.png" data-price="160" data-ingredients='[&quot;لحم فيليه&quot;, &quot;زيت زيتون&quot;, &quot;إكليل الجبل&quot;, &quot;فلفل أسود&quot;, &quot;تتبيلة سرية&quot;]'>
+          <div class="mc-img">
+
+
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873684/faleh_hr1ig6.png" alt="فيليه" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">160₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>فيليه</h3>
+            <p>قطعة فيليه طرية ومشوية على الفحم.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+        <article class="mc" data-category="beef" data-title="كباب" data-desc="كباب عجل طازج مشوي على الفحم." data-img="imag/kabab.png" data-price="80" data-ingredients='[&quot;لحم عجل مفروم&quot;, &quot;بصل&quot;, &quot;بقدونس&quot;, &quot;بهارات مشكلة&quot;, &quot;ملح وفلفل&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873685/kabab_ezr3h7.png" alt="كباب" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">80₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>كباب</h3>
+            <p>كباب عجل طازج مشوي على الفحم.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+        <article class="mc" data-category="beef" data-title="كبدة مشوية" data-desc="كبدة عجل طازجة مشوية مع البهارات." data-img="imag/km.png" data-price="80" data-ingredients='[&quot;كبدة عجل طازجة&quot;, &quot;ثوم&quot;, &quot;كمون&quot;, &quot;فلفل حار&quot;, &quot;عصير ليمون&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873668/km_yfum15.png" alt="كبدة مشوية" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">80₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>كبدة مشوية</h3>
+            <p>كبدة عجل طازجة مشوية مع البهارات.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="beef" data-title="ستيك انتركوت" data-desc="ستيك انتركوت كلاسيكي مشوي بالفحم." data-img="imag/stakenter.png" data-price="160" data-ingredients='[&quot;لحم انتركوت&quot;, &quot;زبدة&quot;, &quot;ثوم محمر&quot;, &quot;أعشاب بروفانسال&quot;, &quot;تتبيلة الشيف&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873706/stakenter_eqvk5u.png" alt="ستيك انتركوت" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">160₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>ستيك انتركوت</h3>
+            <p>ستيك انتركوت كلاسيكي مشوي بالفحم.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="beef" data-title="ستيك فيليه" data-desc="ستيك فيليه ناعم ومشوي على درجة الحرارة المثالية." data-img="imag/stakfalfh.png" data-price="160" data-ingredients='[&quot;فيليه عجل&quot;, &quot;زيت زيتون بكر&quot;, &quot;فلفل ثلاثي الألوان&quot;, &quot;ملح خشن&quot;, &quot;صوص الشيف&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873689/stakfalfh_dag5df.png" alt="ستيك فيليه" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">160₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>ستيك فيليه</h3>
+            <p>ستيك فيليه ناعم ومشوي على درجة الحرارة المثالية.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+    
+        <article class="mc" data-category="chicken" data-title="صدر مشوي" data-desc="صدر دجاج متبل بالأعشاب ومشوي على الفحم." data-img="imag/صدرمشوي.png" data-price="80" data-ingredients='[&quot;صدر دجاج&quot;, &quot;ليمون&quot;, &quot;أعشاب مشكلة&quot;, &quot;ثوم&quot;, &quot;زيت زيتون&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873722/%D8%B5%D8%AF%D8%B1%D9%85%D8%B4%D9%88%D9%8A_w2aogy.png" alt="صدر مشوي" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">80₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>صدر مشوي</h3>
+            <p>صدر دجاج متبل بالأعشاب ومشوي على الفحم.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+
+        <article class="mc" data-category="chicken" data-title="دجاج كامل" data-desc="دجاج كامل مشوي بتتبيلة المطبخ الخاصة." data-img="imag/دجاج.png" data-price="60" data-ingredients='[&quot;دجاج كامل&quot;, &quot;تتبيلة سرية&quot;, &quot;ثوم&quot;, &quot;بهارات مشكلة&quot;, &quot;عصير ليمون&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873722/%D8%AF%D8%AC%D8%A7%D8%AC_mtesrz.png" alt="دجاج كامل" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">60₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>دجاج كامل</h3>
+            <p>دجاج كامل مشوي بتتبيلة المطبخ الخاصة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+
+        <article class="mc" data-category="chicken" data-title="أجنحة مشوية" data-desc="أجنحة دجاج مشوية مقرمشة مع صوص خاص." data-img="imag/جناح.png" data-price="30" data-ingredients='[&quot;أجنحة دجاج&quot;, &quot;صوص بافلو&quot;, &quot;ثوم&quot;, &quot;زبدة&quot;, &quot;بقدونس&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873685/%D8%AC%D9%86%D8%A7%D8%AD_njpaup.png" alt="أجنحة مشوية" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">30₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>أجنحة مشوية</h3>
+            <p>أجنحة دجاج مشوية مقرمشة مع صوص خاص.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="chicken" data-title="شيش طاووق" data-desc="قطع دجاج متبلة ومشوية على الأسياخ." data-img="imag/shesh.png" data-price="80" data-ingredients='[&quot;صدر دجاج&quot;, &quot;زبادي&quot;, &quot;ثوم&quot;, &quot;ليمون&quot;, &quot;توابل مشكلة&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873675/shesh_yqdcnj.png" alt="شيش طاووق" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">80₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>شيش طاووق</h3>
+            <p>قطع دجاج متبلة ومشوية على الأسياخ.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="chicken" data-title="فخد دجاج مشوي" data-desc="فخد دجاج مشوي بنكهة مميزة." data-img="imag/فخد.png" data-price="60" data-ingredients='[&quot;فخد دجاج&quot;, &quot;زيت&quot;, &quot;بهارات&quot;, &quot;ثوم&quot;, &quot;بصل&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873746/%D9%81%D8%AE%D8%AF_n2j0r2.png" alt="فخد دجاج مشوي" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">60₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>فخد دجاج مشوي</h3>
+            <p>فخد دجاج مشوي بنكهة مميزة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="lamb" data-title="ريش خروف" data-desc="ريش خروف مشوية بنكهة غنية ومميزة." data-img="imag/ريش.png" data-price="160" data-ingredients='[&quot;ريش خروف&quot;, &quot;بهارات مشكلة&quot;, &quot;ثوم&quot;, &quot;زيت زيتون&quot;, &quot;أعشاب&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873715/%D8%B1%D9%8A%D8%B4_vfufsi.png" alt="ريش خروف" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">160₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>ريش خروف</h3>
+            <p>ريش خروف مشوية بنكهة غنية ومميزة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="lamb" data-title="لحم شقف" data-desc="شقف لحم خروف طازجة مشوية على الفحم." data-img="imag/شقف.png" data-price="200" data-ingredients='[&quot;لحم خروف طازج&quot;, &quot;تتبيلة الشيف&quot;, &quot;ثوم&quot;, &quot;بصل&quot;, &quot;كزبرة&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873735/%D8%B4%D9%82%D9%81_l67uhk.png" alt="لحم شقف" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">200₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>لحم شقف</h3>
+            <p>شقف لحم خروف طازجة مشوية على الفحم.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="lamb" data-title="لية خروف" data-desc="لية خروف مشوية بطريقة تقليدية مميزة." data-img="imag/ليه.png" data-price="120" data-ingredients='[&quot;لية خروف&quot;, &quot;ملح خشن&quot;, &quot;كمون&quot;, &quot;فلفل أسود&quot;, &quot;ثوم&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873797/%D9%84%D9%8A%D9%87_b5g9p6.png" alt="لية خروف" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">120₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>لية خروف</h3>
+            <p>لية خروف مشوية بطريقة تقليدية مميزة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="lamb" data-title="كبدة خروف" data-desc="كبدة خروف طازجة مشوية مع البهارات الخاصة." data-img="imag/كبدة.png" data-price="80" data-ingredients='[&quot;كبدة خروف&quot;, &quot;ثوم&quot;, &quot;كمون&quot;, &quot;فلفل حار&quot;, &quot;عصير ليمون&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873744/%D9%83%D8%A8%D8%AF%D8%A9_kcl3ob.png" alt="كبدة خروف" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">80₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>كبدة خروف</h3>
+            <p>كبدة خروف طازجة مشوية مع البهارات الخاصة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="premium" data-title="لحم فاخر - فواكه ANGUS" data-desc="أجود أنواع اللحوم الفاخرة من أنغوس، تجربة لا تُنسى." data-img="imag/حلويات.jpeg" data-price="120" data-ingredients='[&quot;لحم أنغوس الأصلي&quot;, &quot;تتبيلة فاخرة خاصة&quot;, &quot;زبدة مكسبة&quot;, &quot;ثوم أسود&quot;, &quot;ملح الهيمالايا&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873678/%D8%AD%D9%84%D9%88%D9%8A%D8%A7%D8%AA_igpixy.jpg" alt="لحم فاخر - فواكه ANGUS" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">120₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>لحم فاخر - فواكه ANGUS</h3>
+            <p>أجود أنواع اللحوم الفاخرة من أنغوس، تجربة لا تُنسى.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+        <article class="mc" data-category="sandwiches" data-title="لفة كباب" data-desc="ساندويش كباب لحم طازج في خبز طازج." data-img="imag/لفةكباب.png" data-price="17" data-ingredients='[&quot;كباب لحم&quot;, &quot;خبز عربي&quot;, &quot;طماطم&quot;, &quot;بصل&quot;, &quot;صوص خاص&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873777/%D9%84%D9%81%D8%A9%D9%83%D8%A8%D8%A7%D8%A8_wwa5ed.png" alt="لفة كباب" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">17₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>لفة كباب</h3>
+            <p>ساندويش كباب لحم طازج في خبز طازج.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+
+        <article class="mc" data-category="sandwiches" data-title="لفة شيش طاووق" data-desc="ساندويش شيش طاووق دجاج مشوي." data-img="imag/لفةشيش.png" data-price="20" data-ingredients='[&quot;شيش طاووق&quot;, &quot;خبز&quot;, &quot;خس&quot;, &quot;طماطم&quot;, &quot;صوص ثومية&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873795/%D9%84%D9%81%D8%A9%D8%B4%D9%8A%D8%B4_egv9iq.png" alt="لفة شيش طاووق" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">20₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>لفة شيش طاووق</h3>
+            <p>ساندويش شيش طاووق دجاج مشوي.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="sandwiches" data-title="لفة شقف فيليه" data-desc="ساندويش شقف فيليه فاخر مشوي." data-img="imag/shaqaf-sandwich.png" data-price="25" data-ingredients='[&quot;فيليه لحم&quot;, &quot;خبز فاخر&quot;, &quot;خضار طازجة&quot;, &quot;صوص الشيف&quot;, &quot;جبن&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873686/shaqaf-sandwich_f0ts3g.png" alt="لفة شقف فيليه" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">25₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>لفة شقف فيليه</h3>
+            <p>ساندويش شقف فيليه فاخر مشوي.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+        <article class="mc" data-category="drinks" data-title="مشروبات غازية" data-desc="مشروبات غازية باردة ومنعشة." data-img="imag/مشروبات غازية.png" data-price="5" data-ingredients='[&quot;مشروب غازي مثلج&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873777/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA_%D8%BA%D8%A7%D8%B2%D9%8A%D8%A9_vb8nqw.jpg" alt="مشروبات غازية" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">5₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>مشروبات غازية</h3>
+            <p>مشروبات غازية باردة ومنعشة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+
+
+
+        <article class="mc" data-category="drinks" data-title="مشروبات مش غازية" data-desc="مشروبات طبيعية باردة ومنعشة." data-img="imag/مشغازية.png" data-price="7" data-ingredients='[&quot;عصائر طبيعية&quot;, &quot;مياه معدنية&quot;, &quot;مشروبات صحية&quot;]'>
+          <div class="mc-img">
+            <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873748/%D9%85%D8%B4%D8%BA%D8%A7%D8%B2%D9%8A%D8%A9_h7t7iv.jpg" alt="مشروبات مش غازية" onerror="this.parentElement.style.background='#1a0a00';this.style.display='none';">
+            <div class="mc-price">7₪</div>
+          </div>
+          <div class="mc-body">
+            <h3>مشروبات مش غازية</h3>
+            <p>مشروبات طبيعية باردة ومنعشة.</p>
+            <button type="button" class="mc-details-btn">تفاصيل المكونات ←</button>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <section class="about-sec" id="about">
+    <div class="about-img">
+      <img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873655/%D8%A7%D9%84%D8%B4%D8%B9%D8%A7%D8%B1_%D8%A8%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1_vtcjec.jpg" alt="شعار Angus For Meat" onerror="this.parentElement.classList.add('no-img')">
+      <div class="about-badge">أنغوس | أصيل 100%</div>
+    </div>
+    <div class="about-txt">
+      <span class="sec-tag">قصتنا</span>
+      <h2>شغف اللحوم منذ أكثر من 15 عاماً</h2>
+      <p class="about-lead">بدأت رحلتنا من حب حقيقي للطهي الأصيل وتقديم أفضل قطع اللحم الأنغوس.</p>
+      <p>نختار قطعنا بعناية من أفضل المصادر، ونعتني بكل تفصيل من التحضير حتى التقديم على طاولتك.</p>
+      <div class="features">
+        <div class="feat"><span>🔥</span><div><h4>مشوي على الفحم</h4><p>نكهة واضحة وتقديم متقن</p></div></div>
+        <div class="feat"><span>⭐</span><div><h4>لحوم مختارة</h4><p>جودة ثابتة وتجربة مميزة</p></div></div>
+        <div class="feat"><span>👨‍🍳</span><div><h4>طهاة محترفون</h4><p>خبرة عالية في فن الشواء</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-sec" id="gallery">
+    <div class="sec-head">
+      <span class="sec-tag">أجمل الذكريات</span>
+      <h2>لحظات لا تُنسى</h2>
+      <div class="ornament"><span></span><svg viewBox="0 0 40 16"><path d="M0 8 Q10 0 20 8 Q30 16 40 8" fill="none" stroke="#c0392b" stroke-width="2"/></svg><span></span></div>
+    </div>
+
+
+    <div class="gallery">
+      <div class="gi large" data-e="" data-src="imag/طاقم MSF.jpg" data-caption="طاقم MSF"><img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873720/%D8%B7%D8%A7%D9%82%D9%85_MSF_mauypf.jpg" alt="طاقم MSF" onerror="this.style.display='none'"><div class="gi-cap">طاقم MSF</div>
+    </div>
+
+
+
+
+      <div class="gi " data-e="" data-src="imag/افطار صائم.png" data-caption="إفطار صائم"><img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873711/%D8%A7%D9%81%D8%B7%D8%A7%D8%B1_%D8%B5%D8%A7%D8%A6%D9%85_huoxbi.png" alt="إفطار صائم" onerror="this.style.display='none'"><div class="gi-cap">إفطار صائم</div>
+    </div>
+
+
+
+      <div class="gi " data-e="" data-src="imag/السيد فهد العف.jpg" data-caption="السيد فهد العف"><img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873718/%D8%A7%D9%84%D8%B3%D9%8A%D8%AF_%D9%81%D9%87%D8%AF_%D8%A7%D9%84%D8%B9%D9%81_gn19dr.jpg" alt="السيد فهد العف" onerror="this.style.display='none'"><div class="gi-cap">السيد فهد العف</div>
+    
+    </div>
+      <div class="gi tall" data-e="" data-src="imag/عفانة.jpg" data-caption="رجل الأعمال أبو حسام عفانة برفقة أبنائه"><img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873721/%D8%B9%D9%81%D8%A7%D9%86%D8%A9_rugsvb.jpg" alt="رجل الأعمال أبو حسام عفانة برفقة أبنائه" onerror="this.style.display='none'"><div class="gi-cap">رجل الأعمال أبو حسام عفانة برفقة أبنائه</div>
+    
+    </div>
+      <div class="gi " data-e="" data-src="imag/روند.png" data-caption="مؤسسة روند"><img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873705/%D8%B1%D9%88%D9%86%D8%AF_jhpotx.png" alt="مؤسسة روند" onerror="this.style.display='none'"><div class="gi-cap">مؤسسة روند</div>
+    
+    </div>
+      <div class="gi " data-e="" data-src="imag/مسجد الإيمان .png" data-caption="مسجد الإيمان"><img src="https://res.cloudinary.com/dmtj8vchw/image/upload/q_auto/f_auto/v1778873792/%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D8%A5%D9%8A%D9%85%D8%A7%D9%86_jmy1cg.png" alt="مسجد الإيمان" onerror="this.style.display='none'"><div class="gi-cap">مسجد الإيمان</div></div>
+    </div>
+  </section>
+
+  <section class="contact-sec" id="contact">
+    <div class="sec-head">
+      <span class="sec-tag">تواصل معنا</span>
+      <h2>نحن هنا لخدمتك</h2>
+      <div class="ornament"><span></span><svg viewBox="0 0 40 16"><path d="M0 8 Q10 0 20 8 Q30 16 40 8" fill="none" stroke="#c0392b" stroke-width="2"/></svg><span></span></div>
+    </div>
+    <div class="contact-wrap">
+      <div class="cinfo">
+        <div class="ci-card"><div class="ci-icon">📍</div><h4>الموقع</h4><p>غزة - الجلاء - مقابل جمعية الشبان المسيحية</p></div>
+        <div class="ci-card"><div class="ci-icon">🕐</div><h4>أوقات العمل</h4><p>يومياً: 12م – 12ص</p></div>
+        <div class="ci-card"><div class="ci-icon">📞</div><h4>الهاتف</h4><p>0566808666</p></div>
+      </div>
+      <form class="cform" onsubmit="submitForm(event)">
+        <h3>أرسل لنا رسالة</h3>
+        <input type="text" placeholder="اسمك الكريم" required>
+        <input type="tel" placeholder="رقم الهاتف">
+        <textarea rows="4" placeholder="رسالتك..."></textarea>
+        <button type="submit" class="btn-red w100">إرسال الرسالة</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="f-brand">
+        <div class="f-logo">
+          <span class="brand-en">ANGUS</span>
+          <span class="brand-ar">FOR MEAT</span>
+        </div>
+        <p>نقدم أرقى تجارب اللحوم الفاخرة في قلب المدينة</p>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61584432755041&locale=ar_AR" target="_blank" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/angus_for_meat/?hl=ar" target="_blank" aria-label="انستجرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="f-links">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#menu">القائمة</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="f-contact">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li>📍 غزة - الجلاء - مقابل جمعية الشبان المسيحية</li>
+          <li>📞 0566808666</li>
+          <li>🕐 12م – 12ص يومياً</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">© 2026 Angus For Meat. جميع الحقوق محفوظة.<br> تصميم وبرمجة : أنس محمد الدحدوح | Anas aldahdouh</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="dish-modal" id="dishModal" aria-hidden="true">
+    <div class="modal-overlay" id="dishModalOverlay"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="dishModalTitle">
+      <button class="modal-close" id="dishModalClose" aria-label="إغلاق">✕</button>
+      <div class="modal-img">
+        <img id="dishModalImg" src="" alt="">
+      </div>
+      <div class="modal-content">
+        <div class="modal-price" id="dishModalPrice"></div>
+        <h2 class="modal-title" id="dishModalTitle"></h2>
+        <p class="modal-desc" id="dishModalDesc"></p>
+        <div class="modal-ingredients">
+          <h4>🧂 المكونات</h4>
+          <ul id="dishModalIngredients"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق">✕</button>
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
