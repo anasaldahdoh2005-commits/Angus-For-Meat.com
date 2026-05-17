@@ -157,7 +157,7 @@ img{max-width:100%;display:block}
 
 .hero-tag{
   font-size:.8rem;
-  letter-spacing:5px;
+  letter-spacing:0px;
   color:var(--gold);
   text-transform:uppercase;
   margin-bottom:16px;
